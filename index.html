@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Comment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+Enviando por POST a host remoto
+<script type="text/javascript" src="cordova.js"></script> 
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/post.js"></script>
+<script type="text/javascript">// <![CDATA[
+        function onBodyLoad() {
+            document.addEventListener("deviceready",onDeviceReady,false);
+        }
+// ]]></script>
+<style>
+        label, b {
+            display: block;
+        }
+     
+</style>
+
+<div id="datos-1" data-datos-id="1">
+<form>
+<label for="email">
+ <b>Email</b>
+ <input id="email" type="email" name="email" />
+ </label>
+ 
+ <label for="comentario">
+ <b>Comentario</b>
+ <textarea id="comentario" cols="30" name="comentario" rows="10">
+ </textarea>
+ </label>
+ 
+ <input type="submit" value="Enviar" />
+ </form>
+ </div>
+
+
+</body>
+</html>
